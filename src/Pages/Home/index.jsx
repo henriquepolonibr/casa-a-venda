@@ -10,6 +10,10 @@ const Home = () => (
     <S.Main>
       <SideBar />
       <S.Content>
+        <h2>
+          Sobrado à venda 400m2 de terreno (10m x 40m),
+          localizado no Parque das Nações, Santo André.
+        </h2>
         <S.MainImage src={fachada} alt="Fachada Casa" />
       </S.Content>
     </S.Main>

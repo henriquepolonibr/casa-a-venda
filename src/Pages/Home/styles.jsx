@@ -7,18 +7,27 @@ export const Main = styled.div`
   flex-direction: row;
 `;
 
-export const MainImage = styled.img`
+export const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  left: 0px;
   width: 100%;
-  height: 100%;
   @media(min-width: 768px){
-    width: 100%;
+    width: 80%;
+    left: 200px;
   }
 `;
 
-export const Content = styled.div`
-  position: absolute;
-  left: 0px;
+export const MainImage = styled.img`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   @media(min-width: 768px){
-    left: 200px;
+    width: 60%;
   }
 `;
