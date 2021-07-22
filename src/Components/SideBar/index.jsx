@@ -3,6 +3,14 @@ import * as S from './styles';
 
 const SideBar = () => (
   <S.SideBar>
+    <S.OrangeButton>
+      Fotos
+      <br />
+      para
+      <br />
+      Imobiliária
+      <br />
+    </S.OrangeButton>
     <S.List>
       Quartos
       <S.ListItem>Suíte Casal</S.ListItem>

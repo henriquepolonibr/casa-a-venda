@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeSpeed;
+    font-family: 'Oswald', sans-serif;
   }
 
   html {

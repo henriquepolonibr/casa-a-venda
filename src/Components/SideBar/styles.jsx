@@ -15,6 +15,15 @@ export const SideBar = styled.div`
   }
   `;
 
+export const OrangeButton = styled.button`
+  background-color: orange;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+  font-size: 26px;
+  box-shadow: 0 0 4px red;
+`;
+
 export const List = styled.ul`
   color: grey;
   font-size: 2.5rem;
