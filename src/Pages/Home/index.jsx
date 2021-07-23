@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../../Components/Header';
 import SideBar from '../../Components/SideBar';
+import MainContent from '../../Components/MainContent';
+import MainContentCopy from '../../Components/MainContentCopy';
 import * as S from './styles';
 import fachada from '../../Assets/img/fachada-1.jpg';
 
@@ -10,6 +12,8 @@ const Home = () => (
     <S.Main>
       <SideBar />
       <S.Content>
+        <MainContent />
+        <MainContentCopy />
         <h2>
           Sobrado à venda 400m2 de terreno (10m x 40m),
           localizado no Parque das Nações, Santo André.

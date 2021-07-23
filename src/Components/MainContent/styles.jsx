@@ -15,21 +15,3 @@ export const HeaderTitle = styled.h2`
   font-size: 2vw;
   font-weight: 500px;
 `;
-
-export const HeaderButtons = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ContactButton = styled.span`
-  color: white;
-  margin-right: 30px;
-  font-size: 22px;
-  &:hover{
-    cursor: pointer;
-  }
-`;
-
-export const HomeButton = styled(ContactButton)`
-`;

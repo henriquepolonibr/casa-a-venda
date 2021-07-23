@@ -4,9 +4,9 @@ export const SideBar = styled.div`
   display: none;
   @media(min-width: 768px){
     display: block;
-    width: 200px;
+    width: 15%;
     background-color: #F0EEF0;
-    height: 100vh;
+    height: auto;
     justify-content: flex-start;
     flex-direction: column;
     padding: 20px 20px 20px 20px;
@@ -17,16 +17,17 @@ export const SideBar = styled.div`
 
 export const OrangeButton = styled.button`
   background-color: orange;
+  color: #1d0a0a;
   width: 100%;
   padding: 20px;
   margin-bottom: 40px;
-  font-size: 26px;
+  font-size: 1.6vw;
   box-shadow: 0 0 4px red;
 `;
 
 export const List = styled.ul`
-  color: grey;
-  font-size: 2.5rem;
+  color: black;
+  font-size: 1.8vw;
   font-weight: 500px;
   margin-bottom: 20px;
   list-style-type: none;
@@ -35,8 +36,9 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   color: grey;
-  font-size: 2rem;
+  font-size: 1.5vw;
   font-weight: 500px;
   list-style-type: none;
   margin-left: 20px;
+  cursor: pointer;
 `;
