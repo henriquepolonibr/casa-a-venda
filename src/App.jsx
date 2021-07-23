@@ -1,11 +1,14 @@
 import React from 'react';
 import Home from './Pages/Home';
+import UserProvider from './contexts/component';
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <UserProvider>
+      <div>
+        <Home />
+      </div>
+    </UserProvider>
   );
 }
 

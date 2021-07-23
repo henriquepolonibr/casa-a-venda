@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useContext } from 'react';
 import SuiteCasal from '../SuiteCasal';
 import SuiteSolteiro1 from '../SuiteSolteiro1';
+import { UserContext } from '../../contexts/component';
 
-class MainContent extends Component {
-    components = {
-      suiteCasal: SuiteCasal,
-      suiteSolteiro1: SuiteSolteiro1,
-    }
-
-    render() {
-      const ComponentToRender = this.components.suiteCasal;
-      // const TagName = this.components[this.props.tag || 'foo'];
-      return <ComponentToRender />;
-    }
-}
+const MainContent = () => {
+  const components = {
+    suiteSolteiro1: SuiteSolteiro1,
+    suiteCasal: SuiteCasal,
+  };
+  const { componentName } = useContext(UserContext);
+  const ComponentToRender = components[componentName];
+  return <ComponentToRender />;
+};
 export default MainContent;
