@@ -1,25 +1,17 @@
-import React, { useState } from 'react';
-// import * as ZS from './styles';
+import React, { Component } from 'react';
+import SuiteCasal from '../SuiteCasal';
+import SuiteSolteiro1 from '../SuiteSolteiro1';
 
-const QuartoCasal = () => {
-  const [showQuartoCasal, setShowQuartoCasal] = useState(false);
-  const onClick = () => setShowQuartoCasal(true);
-  return (
-    <div>
-      <input type="submit" value="Search" onClick={onClick} />
-      { showQuartoCasal ? <Results /> : null }
-    </div>
-  );
-};
+class MainContent extends Component {
+    components = {
+      suiteCasal: SuiteCasal,
+      suiteSolteiro1: SuiteSolteiro1,
+    }
 
-const Results = () => (
-  <div>
-    Quarto Casal
-  </div>
-);
-
-const MainContent = () => (
-  <QuartoCasal />
-);
-
+    render() {
+      const ComponentToRender = this.components.suiteCasal;
+      // const TagName = this.components[this.props.tag || 'foo'];
+      return <ComponentToRender />;
+    }
+}
 export default MainContent;
