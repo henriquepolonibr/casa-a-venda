@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-export const Main = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-`;
-
 export const Content = styled.div`
   display: flex;
   justify-content: center;
@@ -15,10 +8,6 @@ export const Content = styled.div`
   flex-direction: column;
   left: 0px;
   width: 100%;
-  @media(min-width: 768px){
-    width: 80%;
-    left: 20%;
-  }
 `;
 
 export const MainImage = styled.img`

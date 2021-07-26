@@ -5,7 +5,7 @@ import React, { useState, createContext } from 'react';
 export const UserContext = createContext({});
 
 function UserProvider({ children }) {
-  const [componentName, setComponentName] = useState('suiteCasal');
+  const [componentName, setComponentName] = useState('home');
   return (
     <UserContext.Provider value={{ componentName, setComponentName }}>
       {children}

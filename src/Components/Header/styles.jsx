@@ -4,28 +4,36 @@ export const Header = styled.div`
   width: 100%;
   background-color: #3C3C3B;
   height: 100px;
+  align-items: center;
+  position: relative;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 `;
 
 export const HeaderTitle = styled.h2`
   text-align: center;
   color: white;
-  font-size: 2vw;
+  font-size: 6vw;
   font-weight: 500px;
+  @media(min-width:768px) {
+    width: 100%;
+    font-size: 2vw;
+  }
 `;
 
 export const HeaderButtons = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+  @media(min-width:768px) {
+    display: block;
+    position: absolute;
+    right: 5vw;
+  }
 `;
 
 export const ContactButton = styled.span`
   color: white;
   margin-right: 30px;
-  font-size: 22px;
+  font-size: 1.5vw;
   &:hover{
     cursor: pointer;
   }

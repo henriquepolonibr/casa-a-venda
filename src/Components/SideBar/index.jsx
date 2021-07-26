@@ -23,9 +23,9 @@ const SideBar = () => {
         Quartos
         <S.ListItem id="suiteCasal" onClick={handleId}>Suíte Casal</S.ListItem>
         <S.ListItem id="suiteSolteiro1" onClick={handleId}>Suíte Solteiro 1</S.ListItem>
-        <S.ListItem>Suíte Solteiro 2</S.ListItem>
-        <S.ListItem>Suíte Solteiro 3</S.ListItem>
-        <S.ListItem>Suíte Hóspedes</S.ListItem>
+        <S.ListItem id="suiteSolteiro2" onClick={handleId}>Suíte Solteiro 2</S.ListItem>
+        <S.ListItem id="suiteSolteiro3" onClick={handleId}>Suíte Solteiro 3</S.ListItem>
+        <S.ListItem id="suiteHospedes" onClick={handleId}>Suíte Hóspedes</S.ListItem>
       </S.List>
       <S.List>Escritório</S.List>
       <S.List>
