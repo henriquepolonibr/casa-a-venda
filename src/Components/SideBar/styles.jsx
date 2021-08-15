@@ -4,7 +4,7 @@ export const SideBar = styled.div`
   display: none;
   @media(min-width: 768px){
     display: block;
-    width: 15%;
+    width: 20%;
     background-color: #F0EEF0;
     height: auto;
     justify-content: flex-start;
@@ -12,6 +12,9 @@ export const SideBar = styled.div`
     padding: 20px 20px 20px 20px;
     position: absolute;
     left: 0px;
+  }
+  @media(min-width: 1536px){
+    width: 15%;
   }
   `;
 

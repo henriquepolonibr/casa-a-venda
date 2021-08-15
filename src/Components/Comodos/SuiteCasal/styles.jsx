@@ -5,8 +5,17 @@ export const Title = styled.h2`
   margin: 20px;
   font-size: 7vw;
   @media(min-width: 768px){
-    margin-top: 20px;
-    font-size: 2vw;
+    margin: 20px 10px 20px 20px;
+    font-size: 54px;
+  }
+`;
+
+export const Description = styled.h3`
+  font-size: 27px;
+  margin: 0px 10px 20px 0px;
+  font-weight: 400;
+  @media(min-width: 768px){
+    margin: 0px 10px 20px 20px;
   }
 `;
 
@@ -17,7 +26,10 @@ export const ImagesLayout = styled.div`
   justify-content: center;
   align-items: stretch;
   @media(min-width: 768px){
-    max-width: 80%;
+    max-width: 100%;
+  }
+  @media(min-width: 1536px){
+    width: 80%;
   }
 `;
 
