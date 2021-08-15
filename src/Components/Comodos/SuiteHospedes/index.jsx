@@ -1,7 +1,7 @@
 import React from 'react';
-import suiteHospede1 from '../../../Assets/img/suite-hospede-1.jpg';
-import suiteHospede2 from '../../../Assets/img/suite-hospede-2.jpg';
-import suiteHospede3 from '../../../Assets/img/suite-hospede-3.jpg';
+import suiteHospede1 from '../../../Assets/img/suite-hospede/suite-hospede-1.jpg';
+import suiteHospede2 from '../../../Assets/img/suite-hospede/suite-hospede-2.jpg';
+import suiteHospede3 from '../../../Assets/img/suite-hospede/suite-hospede-3.jpg';
 import * as S from './styles';
 
 const SuiteHospedes = () => (

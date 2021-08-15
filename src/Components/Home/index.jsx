@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-import fachada from '../../Assets/img/fachada-1.jpg';
+import fachada from '../../Assets/img/fachada/fachada-1.jpg';
 
 const Home = () => (
   <div>
