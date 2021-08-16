@@ -8,6 +8,12 @@ export const Content = styled.div`
   flex-direction: column;
   left: 0px;
   width: 100%;
+  padding: 20px;
+`;
+
+export const Description = styled.h2`
+  margin-bottom: 20px;
+  text-align: center;
 `;
 
 export const MainImage = styled.img`

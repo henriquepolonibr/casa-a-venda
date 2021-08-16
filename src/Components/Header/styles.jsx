@@ -45,6 +45,11 @@ export const HomeButton = styled(ContactButton)`
 
 export const HamburgerIcon = styled.div`
   display: block;
+  outline: none;
+  &:active {
+    outline: none;
+    border: none;
+  }
   @media(min-width: 768px){
     display: none;
   }
