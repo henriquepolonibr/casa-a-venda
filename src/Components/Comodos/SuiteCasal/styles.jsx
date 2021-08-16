@@ -1,21 +1,25 @@
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 
+export const Content = styled.div`
+  padding: 20px;
+`;
+
 export const Title = styled.h2`
-  margin: 20px;
+  margin: 20px 0px 20px;
   font-size: 7vw;
   @media(min-width: 768px){
-    margin: 20px 10px 20px 20px;
+    margin: 20px 0px 20px;
     font-size: 54px;
   }
 `;
 
 export const Description = styled.h3`
   font-size: 27px;
-  margin: 0px 10px 20px 0px;
+  margin: 20px 0px 20px;
   font-weight: 400;
   @media(min-width: 768px){
-    margin: 0px 10px 20px 20px;
+    margin: 20px 0px 20px;
   }
 `;
 
@@ -27,9 +31,6 @@ export const ImagesLayout = styled.div`
   align-items: stretch;
   @media(min-width: 768px){
     max-width: 100%;
-  }
-  @media(min-width: 1536px){
-    width: 80%;
   }
 `;
 

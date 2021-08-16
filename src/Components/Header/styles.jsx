@@ -8,6 +8,7 @@ export const Header = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  padding: 20px;
 `;
 
 export const HeaderTitle = styled.h2`
@@ -17,7 +18,7 @@ export const HeaderTitle = styled.h2`
   font-weight: 500px;
   @media(min-width:768px) {
     width: 100%;
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
 `;
 
@@ -40,4 +41,11 @@ export const ContactButton = styled.span`
 `;
 
 export const HomeButton = styled(ContactButton)`
+`;
+
+export const HamburgerIcon = styled.div`
+  display: block;
+  @media(min-width: 768px){
+    display: none;
+  }
 `;

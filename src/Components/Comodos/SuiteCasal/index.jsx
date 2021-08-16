@@ -6,7 +6,7 @@ import suiteCasal4 from '../../../Assets/img/suite-casal/suite-casal-4.jpg';
 import * as S from './styles';
 
 const SuiteCasal = () => (
-  <div>
+  <S.Content>
     <S.Title>Suíte Casal</S.Title>
     <S.Description>
       Suíte master da casa com 17,43m² (4,58m x 3,80m) e um pé direito de 2,84m.
@@ -26,7 +26,7 @@ const SuiteCasal = () => (
     <S.ImagesLayout>
       <S.Image src={suiteCasal4} alt="Foto Suíte Casal 4" />
     </S.ImagesLayout>
-  </div>
+  </S.Content>
 );
 
 export default SuiteCasal;
