@@ -7,21 +7,24 @@ import { UserContext } from '../../contexts/component';
 import MobileMenu from '../MobileMenu';
 
 const Header = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(true);
   let { componentName, setComponentName } = useContext(UserContext);
   const handleId = (e) => {
     setComponentName(e.target.id);
   };
-  const toggle = React.useCallback(() => setShowMobileMenu(!showMobileMenu));
+  const [isToggled, setIsToggled] = useState(false);
 
+  const toggle = React.useCallback(
+    () => setIsToggled((state) => !state),
+    [setIsToggled],
+  );
   return (
     <div>
       <S.Header>
         <S.HeaderTitle>SOBRADO ALTO PADRÃO À VENDA</S.HeaderTitle>
-        {/* {showMobileMenu ? <MobileMenu /> : ''} */}
         <S.HamburgerIcon>
-          <Hamburger type="R3dx" color="white" onClick={toggle} />
+          <Hamburger type="R3dx" color="white" onClick={() => setIsToggled(!isToggled)} />
         </S.HamburgerIcon>
+        {isToggled ? <MobileMenu /> : ''}
         <S.HeaderButtons>
           <S.ContactButton id="home" onClick={handleId}>Home</S.ContactButton>
           <S.ContactButton>Contato</S.ContactButton>

@@ -11,7 +11,7 @@ const SideBar = () => {
   };
   return (
     <S.SideBar>
-      <S.OrangeButton>
+      <S.OrangeButton id="imobiliaria" onClick={handleId}>
         Fotos
         <br />
         para
@@ -20,7 +20,7 @@ const SideBar = () => {
         <br />
       </S.OrangeButton>
       <S.List>
-        Quartos
+        5 Quartos
         <S.ListItem id="suiteCasal" onClick={handleId}>Suíte Casal</S.ListItem>
         <S.ListItem id="suiteSolteiro1" onClick={handleId}>Suíte Solteiro 1</S.ListItem>
         <S.ListItem id="suiteSolteiro2" onClick={handleId}>Suíte Solteiro 2</S.ListItem>
@@ -29,10 +29,10 @@ const SideBar = () => {
       </S.List>
       <S.List>Escritório</S.List>
       <S.List>
-        Salas
-        <S.ListItem>Sala de Estar</S.ListItem>
-        <S.ListItem>Sala de Televisão</S.ListItem>
-        <S.ListItem>Sala de Jantar</S.ListItem>
+        3 Salas
+        <S.ListItem id="salaEstar" onClick={handleId}>Sala de Estar</S.ListItem>
+        <S.ListItem id="salaTelevisao" onClick={handleId}>Sala de Televisão</S.ListItem>
+        <S.ListItem id="salaJantar" onClick={handleId}>Sala de Jantar</S.ListItem>
       </S.List>
       <S.List>Cozinha</S.List>
       <S.List>Garagem</S.List>

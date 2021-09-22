@@ -26,6 +26,10 @@ export const OrangeButton = styled.button`
   margin-bottom: 40px;
   font-size: 1.6vw;
   box-shadow: 0 0 4px red;
+
+  &:hover{
+    cursor: pointer;
+  }
 `;
 
 export const List = styled.ul`
